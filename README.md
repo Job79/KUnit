@@ -16,7 +16,7 @@
 
 \* Tested on local machine(linux, ryzen 7) [TODO Upload performance test]
 
-# Examples
+# Example
 
 ```cs
     static async Task Main(string[] args)
