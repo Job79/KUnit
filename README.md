@@ -14,7 +14,7 @@
 - Very fast (~28.000 tests/second)*
 - Stand-alone
 
-\* Tested on local machine(linux, ryzen 7) [TODO Upload performance test]
+\* See [TODO performance test]
 
 # Example
 
