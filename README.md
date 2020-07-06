@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/version-1.0.0-green.svg">
   <img src="https://img.shields.io/badge/build-passing-green.svg">
   <br/>
-  Fast and very small unit testing framework.
+  Very small and fast unit testing framework.
   <br/><br/><br/>
 </p>
 
