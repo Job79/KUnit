@@ -50,8 +50,8 @@ namespace KUnit
         /// <summary>
         /// Tests whether the specified parameters are different and fails the test when they are equal 
         /// </summary>
-        public static void AreNotEqual<T1, T2>(T1 expected, T2 actual, string message = "") =>
-            IsFalse(() => !expected.Equals(actual), message);
+        public static void AreNotEqual<T>(T expected, T actual, string message = "") =>
+            IsFalse(() => EqualityComparer<T>.Default.Equals(expected, actual), message);
 
         /// <summary>
         /// Tests whether the specified parameter is null and fails the test when parameter is not-null 

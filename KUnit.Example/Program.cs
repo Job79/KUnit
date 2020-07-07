@@ -1,15 +1,11 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace KUnit.Example
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            KUnitTest.OnTestComplete += Console.WriteLine;
-            KUnitTest.RunTests();
-            Console.ReadLine();
-        }
+        static Task Main(string[] args) => KUnitTest.RunTestsPrintOutputAsync();
 
         public Program()
         {
@@ -17,15 +13,15 @@ namespace KUnit.Example
         }
         
         [Test]
-        public void Fail()
-        {
-            Assert.Fail();
-        }
-        
-        [Test]
         public void Pass()
         {
             Assert.Pass();
+        }
+        
+        [Test]
+        public void Fail()
+        {
+            Assert.Fail();
         }
         
         [Test]
