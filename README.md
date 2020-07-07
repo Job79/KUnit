@@ -19,22 +19,24 @@
 # Example
 
 ```cs
-    static async Task Main(string[] args)
-    {
-        KUnitTest.OnTestComplete += Console.WriteLine;
-        await KUnitTest.RunTestsAsync();
-        Console.ReadLine();
-     }
+    static Task Main() => KUnitTest.RunTestsPrintOutputAsync();
 
     public Program()
     {
         Console.WriteLine("Setup...");
     }
-        
+
     [Test]
     public void Pass()
     {
         Assert.Pass();
-    }
-        
+    }       
+```
+```
+Detecting all tests...
+Setup...
+Running 1 test...
+Starting Pass...
+Completed Pass; Pass; 10ms
+test results: 1 passed; 0 failed; 0 errors
 ```
