@@ -14,7 +14,7 @@
 - Very fast (~28.000 tests/second)*
 - Stand-alone
 
-\* See [TODO performance test]
+\* See KUnit.Performance
 
 # Example
 
